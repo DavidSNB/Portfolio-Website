@@ -9,31 +9,22 @@
   --accent: #e2ad27;
 }
 
-* {
+body {
   margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-html {
+  background-color: white;
   font-family: Futura PT, sans-serif;
 }
-body {
-  width: 100%;
-  background-color: white;
-}
-
 h1 {
   color: var(--dark);
   font-size: 120px;
   font-weight: 600;
+  margin: 0;
 }
 h2 {
   color: var(--dark);
   font-size: 28px;
   font-weight: 500;
+  margin: 0;
 }
 ul {
   list-style: none;
@@ -41,44 +32,20 @@ ul {
   padding: 0;
 }
 
-.container {
-  width: 85%;
-  margin: 0 auto;
-}
-
-/* Navigation Bar Styling*/
-header {
-  background: var(--light2);
-}
-.top-bar::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .logo {
-  float: left;
   height: 36px;
 }
-nav {
-  float: right;
-}
 
-.main-nav::after {
-  content: "";
-  clear: both;
-  display: table;
+.social-links {
+  height: 25px;
 }
 
 /*
-li {
-  color: var(--dark);
-  font-size: 28px;
-  font-weight: 500;
+header {
+  position: fixed;
+}
+
+nav {
+  position: absolute;
 }
 */
-nav {
-  color: var(--dark);
-  font-size: 28px;
-  font-weight: 500;
-  text-decoration: none;
-}

@@ -2,57 +2,81 @@
 <html lang="en">
 
 <head>
-  <title>David Batest</title>
+  <title>David Bates</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
-  <div class="container">
-    <header class="top-bar">
-      <img src="images/Logo.svg" alt="David Bates Logo" class="logo">
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Design Portfolio</a></li>
-          <li><a href="#">Photography</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <div class="navigation-container">
+    <div class="container">
+      <header>
+        <a href="#">
+          <img src="images/Logo.svg" alt="Logo" class="logo">
+          <h2>David Bates</h2>
+        </a>
 
-    <section>
+        <nav>
+          <a href="#" class="hide-desktop">
+            <p class="menu" id="menu">Menu</p>
+          </a>
+
+          <ul class="show-dektop hide-mobile">
+            <li id="exit-btn hide-desktop" id="exit"><a href="#">Exit Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Design Portfolio</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="hero">
       <h1>Hi, I'm David Bates</h1>
       <h2>A aspirational UX/UI designer who is currently studying at Loughborough University.</h2>
+
+      <a href="#" class="button cta">Contact</a>
+      <a href="#" class="button">Design Portfolio</a>
+      <div>
+        <a href="#"><img src="images/Twitter.svg" alt="Twitter Link" class="social-links"></a>
+        <a href="#"><img src="images/Behance.svg" alt="Behance Link" class="social-links"></a>
+        <a href="#"><img src="images/Instagram.svg" alt="Instagram Link" class="social-links"></a>
+      </div>
     </section>
 
-    <div class="cta">
-      <button class="normal-button">Contact</button>
-      <button class="accent-button">Design Portfolio</button>
-      <div class="social-links">
-        <a href="#"></a><img src="images/Twitter.svg" alt="Twitter Link"></a>
-        <a href="#"></a><img src="images/Behance.svg" alt="Behance Link"></a>
-        <a href="#"></a><img src="images/Instagram.svg" alt="Instagram Link"></a>
-      </div>
-    </div>
-
     <ul>
-      <li><a href="#"></a><img src="images/portfoli-cover-1.svg" alt="Project 1"></a></li>
-      <li></li><a href="#"></a><img src="images/portfoli-cover-2.svg" alt="Project 2"></a></li>
-      <li></li><a href="#"></a><img src="images/portfoli-cover-3.svg" alt="Project 3"></a></li>
-      <li></li><a href="#"></a><img src="images/portfoli-cover-4.svg" alt="Project 4"></a></li>
+      <li><a href="#"><img src="images/portfoli-cover-1.svg" alt="Project 1"></a></li>
+      <li><a href="#"><img src="images/portfoli-cover-2.svg" alt="Project 2"></a></li>
+      <li><a href="#"><img src="images/portfoli-cover-3.svg" alt="Project 3"></a></li>
+      <li><a href="#"><img src="images/portfoli-cover-4.svg" alt="Project 4"></a></li>
     </ul>
 
     <div>
       <h2>Want More?</h2>
-      <button class="accent-button">Design Portfolio</button>
+      <a href="#" class="button cta">Design Portfolio</a>
     </div>
-    <footer>
-      <p>All Content © 2020-Current David Bates </p>
-    </footer>
+
   </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="container">
+
+        <p>All Content © 2020-Current David Bates </p>
+        <div>
+          <a href="#"><img src="images/Twitter.svg" alt="Twitter Link" class="social-links"></a>
+          <a href="#"><img src="images/Behance.svg" alt="Behance Link" class="social-links"></a>
+          <a href="#"><img src="images/Instagram.svg" alt="Instagram Link" class="social-links"></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

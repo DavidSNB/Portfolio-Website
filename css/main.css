@@ -9,14 +9,27 @@
   --accent: #e2ad27;
 }
 
-/* General Properties*/
+/* GENERAL */
 body {
   margin: 0;
   background-color: white;
   font-family: Futura PT, sans-serif;
 }
 
-/* Text */
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+
+  /*display: grid;
+  grid-template-columns: 1fr;*/
+}
+
+/* TYPOGRAPHY */
 h1 {
   margin: 0;
   color: var(--dark);
@@ -25,6 +38,13 @@ h1 {
 }
 
 h2 {
+  margin: 0;
+  color: var(--dark);
+  font-size: 4.7em;
+  font-weight: 600;
+}
+
+h3 {
   margin: 0;
   color: var(--dark);
   font-size: 1.75em;
@@ -38,22 +58,9 @@ p {
   line-height: 1.2em;
 }
 
-.container {
-  width: 85%;
-  margin: 32px auto 0 auto;
-}
-
-/* Logo */
-.logo {
-  height: 36px;
-}
-
-/* Icons */
-.social-links {
-  height: 25px;
-}
-
+/* NAVIGATION */
 .nav-wrapper {
+  margin: 32px auto 32px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -65,24 +72,96 @@ ul {
   display: flex;
 }
 
-.logo-group > li {
-  margin-right: 17px;
+.logo {
+  height: 36px;
 }
 
-a {
-  text-decoration: none;
+.logo-group > li {
+  margin-right: 17px;
 }
 
 nav a {
   color: var(--dark);
   font-size: 1.75em;
   font-weight: 500;
+  margin-left: 50px;
 }
 
 nav a:hover {
   color: var(--accent);
 }
 
-.nav-links li {
-  margin-left: 50px;
+/* HERO INTRODUCTION */
+.hero {
+  margin: 228px 0;
+}
+
+.buttons a {
+  margin: 70px 8px 55px;
+}
+
+.button {
+  background-color: var(--dark);
+  color: var(--light1);
+  width: 160px;
+  display: inline-block;
+  border-radius: 1000px;
+  padding: 13px 20px;
+}
+
+.cta {
+  background-color: var(--accent);
+}
+
+.social-links a img {
+  height: 25px;
+  margin: auto 20px;
+}
+
+/* PORTFOLIO */
+.portfolio-tile-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-tile-item-wrapper {
+  position: relative;
+}
+
+.portfolio-tile-img-background {
+  width: 100%;
+}
+
+.img-text-wrapper {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+.img-text-wrapper div * {
+  opacity: 0;
+  color: var(--light1);
+  transition: 0.3s;
+}
+
+.portfolio-tile-item-wrapper:hover .img-text-wrapper div * {
+  opacity: 1;
+}
+
+.portfolio-tile-darken {
+  transition: 0.3s;
+  filter: brightness(50%);
+}
+
+.more {
+  margin: 70px auto 100px;
+}
+
+footer p {
+  margin: 13px auto;
 }

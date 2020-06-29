@@ -9,43 +9,80 @@
   --accent: #e2ad27;
 }
 
+/* General Properties*/
 body {
   margin: 0;
   background-color: white;
   font-family: Futura PT, sans-serif;
 }
+
+/* Text */
 h1 {
+  margin: 0;
   color: var(--dark);
-  font-size: 120px;
+  font-size: 7.5em;
   font-weight: 600;
-  margin: 0;
-}
-h2 {
-  color: var(--dark);
-  font-size: 28px;
-  font-weight: 500;
-  margin: 0;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
+h2 {
+  margin: 0;
+  color: var(--dark);
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  color: var(--dark);
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.container {
+  width: 85%;
+  margin: 32px auto 0 auto;
+}
+
+/* Logo */
 .logo {
   height: 36px;
 }
 
+/* Icons */
 .social-links {
   height: 25px;
 }
 
-/*
-header {
-  position: fixed;
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-nav {
-  position: absolute;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
-*/
+
+.logo-group > li {
+  margin-right: 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: var(--dark);
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.nav-links li {
+  margin-left: 50px;
+}

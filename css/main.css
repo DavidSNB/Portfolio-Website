@@ -1,0 +1,84 @@
+:root {
+  --dark: #000000;
+  --light1: #ffffff;
+  --light2: #f5e6cf;
+  --secondary1: #3752d3;
+  --secondary2: #2f8221;
+  --secondary3: #8f3985;
+  --secondary4: #c13344;
+  --accent: #e2ad27;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  font-family: Futura PT, sans-serif;
+}
+body {
+  width: 100%;
+  background-color: white;
+}
+
+h1 {
+  color: var(--dark);
+  font-size: 120px;
+  font-weight: 600;
+}
+h2 {
+  color: var(--dark);
+  font-size: 28px;
+  font-weight: 500;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Navigation Bar Styling*/
+header {
+  background: var(--light2);
+}
+.top-bar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+  float: left;
+  height: 36px;
+}
+nav {
+  float: right;
+}
+
+.main-nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+li {
+  color: var(--dark);
+  font-size: 28px;
+  font-weight: 500;
+}
+*/
+nav {
+  color: var(--dark);
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+}

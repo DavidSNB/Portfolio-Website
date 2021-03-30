@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Design Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header for holding navigation elements -->
+        <header class="nav-container">
+            <a href="index.html" class="left-side">
+                <ul class="logo-group">
+                    <li><img src="images/Logo.svg" alt="Logo" class="logo"></li>
+                    <li>
+                        <p class="nav-text">David Bates</p>
+                    </li>
+                </ul>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle Navigation Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="right-side navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link nav-text active-nav-item">Design
+                            Portfolio</a>
+                    </li>
+                    <li class="nav__item"><a href="photography.html" class="nav__link nav-text">Photography</a>
+                    </li>
+                    <li class="nav__item"><a href="about.html" class="nav__link nav-text">About</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link nav-text">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- The portfolio tile items -->
+        <div class="content">
+            <h3>Best Work</h3>
+            <div class="portfolio-tile-wrapper">
+                <div class="portfolio-tile-items">
+                    <!-- Tile -->
+                    <a href="#" class="portfolio-tile__item portfolio-tile__item--physical">
+                        <img src="images/portfolio.jpg" alt="Portfolio 1" class="portfolio-tile__img">
+                        <div class="portfolio-tile__text">
+                            <h2 class="portfolio-tile__title">Portfolio 1</h2>
+                            <p class="portfolio-tile__subtitle">For this I did some really good work</p>
+                        </div>
+                    </a><!-- / Tile -->
+
+                    <!-- Tile -->
+                    <a href="#" class="portfolio-tile__item portfolio-tile__item--digital">
+                        <img src="images/portfolio.jpg" alt="Portfolio 2" class="portfolio-tile__img">
+                        <div class="portfolio-tile__text">
+                            <h2 class="portfolio-tile__title">Portfolio 2</h2>
+                            <p class="portfolio-tile__subtitle">For this I did some really good work</p>
+                        </div>
+                    </a><!-- / Tile -->
+
+                    <!-- Tile -->
+                    <a href="#" class="portfolio-tile__item portfolio-tile__item--physical">
+                        <img src="images/portfolio.jpg" alt="Portfolio 3" class="portfolio-tile__img">
+                        <div class="portfolio-tile__text">
+                            <h2 class="portfolio-tile__title">Portfolio 3</h2>
+                            <p class="portfolio-tile__subtitle">For this I did some really good work</p>
+                        </div>
+                    </a><!-- / Tile -->
+
+                    <!-- Tile -->
+                    <a href="#" class="portfolio-tile__item portfolio-tile__item--physical">
+                        <img src="images/portfolio.jpg" alt="Portfolio 4" class="portfolio-tile__img">
+                        <div class="portfolio-tile__text">
+                            <h2 class="portfolio-tile__title">Portfolio 4</h2>
+                            <p class="portfolio-tile__subtitle">For this I did some really good work</p>
+                        </div>
+                    </a><!-- / Tile -->
+
+                </div> <!-- / Portfolio Tiles -->
+            </div>
+            <h3>Archived Projects</h3>
+            <div class="portfolio-tile-wrapper">
+                <div class="portfolio-tile-items mini-tile-items">
+                    <!-- Tile -->
+                    <a href="#" class="portfolio-tile__item portfolio-tile__item--physical">
+                        <img src="images/portfolio.jpg" alt="Portfolio 1" class="portfolio-tile__img">
+                        <div class="portfolio-tile__text">
+                            <p class="portfolio-tile__subtitle">For this I did some really good work</p>
+                        </div>
+                    </a><!-- / Tile -->
+
+                    <!-- Tile -->
+                    <a href="#" class="portfolio-tile__item portfolio-tile__item--digital">
+                        <img src="images/portfolio.jpg" alt="Portfolio 2" class="portfolio-tile__img">
+                        <div class="portfolio-tile__text">
+                            <p class="portfolio-tile__subtitle">For this I did some really good work</p>
+                        </div>
+                    </a><!-- / Tile -->
+
+                    <!-- Tile -->
+                    <a href="#" class="portfolio-tile__item portfolio-tile__item--physical">
+                        <img src="images/portfolio.jpg" alt="Portfolio 3" class="portfolio-tile__img">
+                        <div class="portfolio-tile__text">
+                            <p class="portfolio-tile__subtitle">For this I did some really good work</p>
+                        </div>
+                    </a><!-- / Tile -->
+
+                    <!-- Tile -->
+                    <a href="#" class="portfolio-tile__item portfolio-tile__item--physical">
+                        <img src="images/portfolio.jpg" alt="Portfolio 4" class="portfolio-tile__img">
+                        <div class="portfolio-tile__text">
+                            <p class="portfolio-tile__subtitle">For this I did some really good work</p>
+                        </div>
+                    </a><!-- / Tile -->
+
+                </div> <!-- / Portfolio Mini Tiles -->
+            </div>
+        </div>
+    </div>
+    <!-- The footer -->
+    <footer>
+        <div class="container">
+            <ul class="social-list">
+                <li class="social-list__item"><a href="https://twitter.com/dsnbdesign" target="_blank"
+                        class="social-list__link">
+                        <i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social-list__item"><a href="https://www.behance.net/dsnbdesign/" target="_blank"
+                        class="social-list__link"><i class="fab fa-behance"></i></a>
+                </li>
+                <li class="social-list__item"><a href="https://www.instagram.com/dsnbdesign/?hl=en" target="_blank"
+                        class="social-list__link"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            <p>All Content © 2020-Current David Bates </p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
